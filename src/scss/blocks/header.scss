@@ -1,6 +1,6 @@
 /*----header-----*/
 .header {
-  // position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -8,8 +8,7 @@
   z-index: 500;
   transition: position 10s ease-in, background-color 0.3s ease-in;
   &.active {
-    position: fixed;
-    background: #000000;
+    background: var(--white-color);
   }
   .logo {
     flex-shrink: 0;

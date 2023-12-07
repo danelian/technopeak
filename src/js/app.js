@@ -1,6 +1,13 @@
 $(document).ready(function () {
   const body = document.querySelector('body');
 
+  // ---------------------- HEADER -----------------------
+  const scrollHeader = () => {
+    const header = document.getElementById('header')
+    window.scrollY >= 80 ? header.classList.add('active') : header.classList.remove('active')
+  }
+  window.addEventListener('scroll', scrollHeader)
+
 
   // ------------------- BURGER MENU ---------------------
   const burgerMenu = document.getElementById('burger-menu'),
@@ -23,7 +30,7 @@ $(document).ready(function () {
   burgerLinks.forEach(n => n.addEventListener('click', linkAction));
 
 
-  // ---------- Добавление иконки для раскрытия sub-menu -------------
+  // ---------------- HEADER SUB-MENU ICON ----------------
   var liElements = document.querySelectorAll('.header__menu li')
   for (var i = 0; i < liElements.length; i++) {
     var li = liElements[i]
@@ -34,7 +41,7 @@ $(document).ready(function () {
       li.insertBefore(button, submenu)
     }
   }
-  /*=== Header burger sub-menu ===========================*/
+  // --------------- HEADER BURGER SUB-MENU ----------------
   if (window.innerWidth < 1366) {
     const accordeonMenuItems = document.querySelectorAll('.header__menu li.menu-item-has-children')
     accordeonMenuItems.forEach(item => {
@@ -61,7 +68,7 @@ $(document).ready(function () {
   }
 
 
-  /*=== Search (Header) ==================================*/
+  // ------------------ SEARCH (HEADER) -------------------
   if (window.innerWidth >= 1366) {
     let searchForm = document.querySelector("#searchForm");
     let searchInput = document.querySelector("#searchForm .search-input");

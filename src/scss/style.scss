@@ -54,7 +54,7 @@
 @import "general";
 @import "blocks/buttons";
 @import "blocks/title";
-
+@import "blocks/pages";
 
 /***** COMPONENTS GLOBAL *****/
 @import "blocks/header";
@@ -69,3 +69,4 @@
 // @import "blocks/form";
 
 /***** SECTIONS GLOBAL (Widgets) *****/
+@import "widgets/hero";

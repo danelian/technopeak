@@ -1,0 +1,21 @@
+.frontpage-desktop-bg,
+.frontpage-mobile-bg {
+  position: absolute;
+  top: 0;left: 0;right: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.frontpage-mobile-bg {
+  display: none;
+}
+
+@include mobile {
+  .frontpage-desktop-bg {
+    display: none;
+  }
+  .frontpage-mobile-bg {
+    display: block;
+  }
+}
