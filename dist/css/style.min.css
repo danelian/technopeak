@@ -476,6 +476,38 @@ th {
   color: var(--global-color);
 }
 
+@media screen and (max-width: 1024px) {
+  .button {
+    padding: 10px 32px;
+    min-width: 150px;
+    min-height: 52px;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 10px;
+  }
+  .button svg {
+    top: 8px;
+    right: 8px;
+    width: 18px;
+    height: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .button {
+    padding: 10px 32px;
+    min-width: 120px;
+    min-height: 44px;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 10px;
+  }
+  .button svg {
+    top: 6px;
+    right: 6px;
+    width: 14px;
+    height: 14px;
+  }
+}
 /*-----title----*/
 .heading-row {
   display: flex;
@@ -1328,4 +1360,55 @@ h1, h2, h3, h4, h5, h6 {
 }
 .hero-benefit:not(:last-child) {
   margin-right: 16px;
+}
+
+@media screen and (max-width: 1560px) {
+  .hero {
+    padding-top: 200px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero {
+    padding-bottom: 48px;
+  }
+  .hero__container .page-title {
+    margin-bottom: 16px;
+  }
+  .hero__container p {
+    font-size: 16px;
+  }
+  .hero__container .button {
+    margin-top: 24px;
+  }
+  .hero__benefits {
+    max-width: 100%;
+    width: 100%;
+    flex-direction: column;
+  }
+  .hero-benefit {
+    padding: 18px;
+  }
+  .hero-benefit__head {
+    margin-bottom: 12px;
+  }
+  .hero-benefit__icon {
+    width: 40px;
+    height: 40px;
+  }
+  .hero-benefit__title {
+    margin-left: 16px;
+    font-size: 18px;
+  }
+  .hero-benefit__text {
+    font-size: 14px;
+  }
+  .hero-benefit:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hero__container p {
+    font-size: 15px;
+  }
 }

@@ -84,3 +84,63 @@
     }
   }
 }
+
+@include desktop {
+  .hero {
+    padding-top: 200px;
+  }
+}
+
+@include tablet {
+  .hero {
+    padding-bottom: 48px;
+    &__container {
+      .page-title {
+        margin-bottom: 16px;
+      }
+      p {
+        font-size: 16px;
+      }
+      .button {
+        margin-top: 24px;
+      }
+    }
+    &__benefits {
+      max-width: 100%;
+      width: 100%;
+      flex-direction: column;
+    }
+    &-benefit {
+      padding: 18px;
+      &__head {
+        margin-bottom: 12px;
+      }
+      &__icon {
+        width: 40px;
+        height: 40px;
+      }
+      &__title {
+        margin-left: 16px;
+        font-size: 18px;
+      }
+      &__text {
+        font-size: 14px;
+      }
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .hero {
+    &__container {
+      p {
+        font-size: 15px;
+        
+      }
+    }
+  }
+}
