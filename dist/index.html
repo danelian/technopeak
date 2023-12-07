@@ -24,7 +24,14 @@
   <div class="container">
     <div class="header__container">
       <a href="/" class="logo"><img src="/img/logo.svg" alt="technopeak logo"></a>
-      <nav class="header__nav">
+      <nav class="header__nav" id="burger-menu">
+        <div class="header__nav-head">
+          <a href="/" class="logo"><img src="/img/logo.svg" alt="technopeak logo"></a>
+          <!-- Burger Close Button -->
+          <button type="button" class="burger__close" id="burger-close">
+            <img src="/img/icons/burger-close.svg" alt="close burger menu">
+          </button>
+        </div>
         <ul class="header__menu">
           <li><a href="#">About us</a></li>
           <li><a href="#">Industry</a></li>
@@ -74,6 +81,10 @@
           </div>
         </div>
       </nav>
+      <!-- Burger Close Button -->
+      <button type="button" class="burger__open" id="burger-open">
+        <img src="/img/icons/burger-open.svg" alt="open burger menu">
+      </button>
     </div>
   </div>
 </header>
