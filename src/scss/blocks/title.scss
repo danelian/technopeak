@@ -35,3 +35,36 @@ h1,h2,h3,h4,h5,h6 {
 	text-transform: uppercase;
 	color: #444444;
 }
+
+@media screen and (max-width: 1365px) {
+	.page-title {
+		margin-bottom: 24px;
+		font-size: 80px;
+	}
+	.section-title {
+		margin-bottom: 24px;
+		font-size: 44px;
+	}
+}
+
+@include tablet {
+	.page-title {
+		margin-bottom: 24px;
+		font-size: 48px;
+	}
+	.section-title {
+		margin-bottom: 24px;
+		font-size: 36px;
+	}
+}
+
+@include mobile {
+	.page-title {
+		margin-bottom: 16px;
+		font-size: 32px;
+	}
+	.section-title {
+		margin-bottom: 16px;
+		font-size: 32px;
+	}
+}
