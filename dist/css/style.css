@@ -1838,3 +1838,68 @@ h1, h2, h3, h4, h5, h6 {
     row-gap: 32px;
   }
 }
+.fclients {
+  padding-top: 36px;
+  padding-bottom: 48px;
+}
+.fclients .heading {
+  margin-bottom: 24px;
+}
+.fclients .line-decor {
+  margin-bottom: 60px;
+}
+.fclients__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  width: 100%;
+}
+
+.line-decor {
+  display: block;
+  width: 100%;
+  height: 44px;
+  border-radius: 15px;
+  background: linear-gradient(to right, #20c4b2 0%, #ff006d 100%);
+}
+
+.point__icon {
+  position: relative;
+  width: 100%;
+  margin-bottom: 16px;
+  height: 24px;
+}
+.point__icon::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  background-color: var(--red-color);
+}
+.point__icon::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 6px;
+  width: calc(100% - 6px);
+  height: 2px;
+  border-radius: 3px;
+  background-color: var(--red-color);
+}
+.point__text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+  color: var(--font-color);
+}
+.point__text p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.point__text p:not(:last-child) {
+  margin-bottom: 12px;
+}
