@@ -93,7 +93,8 @@
 
 @include tablet {
   .newsbl {
-    padding-top: 48px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     .heading {
       margin-bottom: 32px;
       .section-title {
@@ -129,7 +130,8 @@
 
 @include mobile {
   .newsbl {
-    padding-top: 36px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     .heading {
       margin-bottom: 20px;
       .button-icon-arrow {

@@ -93,7 +93,7 @@
 
 @include tablet {
   .hero {
-    padding-bottom: 48px;
+    padding-bottom: 40px;
     &__container {
       .page-title {
         margin-bottom: 16px;
@@ -136,7 +136,7 @@
 
 @include mobile {
   .hero {
-    padding-bottom: 36px;
+    padding-bottom: 32px;
     &__container {
       p {
         font-size: 15px;

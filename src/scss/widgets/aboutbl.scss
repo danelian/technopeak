@@ -1,6 +1,6 @@
 .aboutbl {
   padding-top: 60px;
-  padding-bottom: 48px;
+  padding-bottom: 60px;
   &__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -135,8 +135,6 @@
 
 @include desktop {
   .aboutbl {
-    padding-top: 48px;
-    padding-bottom: 24px;
     &__container {
       grid-template-columns: repeat(1, 1fr);
       gap: 20px;
@@ -166,8 +164,8 @@
 
 @include tablet {
   .aboutbl {
-    padding-top: 0px;
-    padding-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
     &__col {
       padding: 24px 20px;
       .section-title {
@@ -250,5 +248,12 @@
       grid-template-columns: repeat(1, 1fr);
       row-gap: 32px;
     }
+  }
+}
+
+@include mobile {
+  .aboutbl {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }

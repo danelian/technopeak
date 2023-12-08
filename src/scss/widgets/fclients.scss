@@ -1,8 +1,11 @@
 .fclients {
-  padding-top: 36px;
-  padding-bottom: 48px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   .heading {
     margin-bottom: 24px;
+    .section-title {
+      margin-bottom: 0;
+    }
   }
   .line-decor {
     margin-bottom: 60px;
@@ -59,6 +62,58 @@
       margin-bottom: 0;
       &:not(:last-child) {
         margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .fclients {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .line-decor {
+      margin-bottom: 40px;
+    }
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .line-decor {
+    height: 36px;
+  }
+}
+
+@include mobile {
+  .fclients {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 24px;
+    }
+    .heading {
+      margin-bottom: 12px;
+    }
+  }
+  .line-decor {
+    height: 20px;
+    border-radius: 5px;
+  }
+  .point {
+    &__icon {
+      height: 16px;
+      &::before {
+        width: 16px;
+        height: 16px;
+        border-radius: 3px;
+      }
+    }
+    &__text {
+      font-size: 14px;
+      p {
+        &:not(:last-child) {
+          margin-bottom: 8px;
+        }
       }
     }
   }

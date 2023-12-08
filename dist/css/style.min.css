@@ -1411,7 +1411,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 1024px) {
   .hero {
-    padding-bottom: 48px;
+    padding-bottom: 40px;
   }
   .hero__container .page-title {
     margin-bottom: 16px;
@@ -1451,7 +1451,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 576px) {
   .hero {
-    padding-bottom: 36px;
+    padding-bottom: 32px;
   }
   .hero__container p {
     font-size: 15px;
@@ -1556,7 +1556,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width: 1024px) {
   .newsbl {
-    padding-top: 48px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .newsbl .heading {
     margin-bottom: 32px;
@@ -1588,7 +1589,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 576px) {
   .newsbl {
-    padding-top: 36px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
   .newsbl .heading {
     margin-bottom: 20px;
@@ -1613,7 +1615,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .aboutbl {
   padding-top: 60px;
-  padding-bottom: 48px;
+  padding-bottom: 60px;
 }
 .aboutbl__container {
   display: grid;
@@ -1739,10 +1741,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 1560px) {
-  .aboutbl {
-    padding-top: 48px;
-    padding-bottom: 24px;
-  }
   .aboutbl__container {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
@@ -1763,8 +1761,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 1024px) {
   .aboutbl {
-    padding-top: 0px;
-    padding-bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .aboutbl__col {
     padding: 24px 20px;
@@ -1838,12 +1836,21 @@ h1, h2, h3, h4, h5, h6 {
     row-gap: 32px;
   }
 }
+@media screen and (max-width: 576px) {
+  .aboutbl {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 .fclients {
-  padding-top: 36px;
-  padding-bottom: 48px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .fclients .heading {
   margin-bottom: 24px;
+}
+.fclients .heading .section-title {
+  margin-bottom: 0;
 }
 .fclients .line-decor {
   margin-bottom: 60px;
@@ -1902,4 +1909,51 @@ h1, h2, h3, h4, h5, h6 {
 }
 .point__text p:not(:last-child) {
   margin-bottom: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+  .fclients {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .fclients .line-decor {
+    margin-bottom: 40px;
+  }
+  .fclients__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .line-decor {
+    height: 36px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .fclients {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .fclients__list {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 24px;
+  }
+  .fclients .heading {
+    margin-bottom: 12px;
+  }
+  .line-decor {
+    height: 20px;
+    border-radius: 5px;
+  }
+  .point__icon {
+    height: 16px;
+  }
+  .point__icon::before {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+  }
+  .point__text {
+    font-size: 14px;
+  }
+  .point__text p:not(:last-child) {
+    margin-bottom: 8px;
+  }
 }
