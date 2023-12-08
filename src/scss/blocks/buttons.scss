@@ -43,29 +43,49 @@
 	}
 }
 
-.btn-icon {
+.button-icon-arrow {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
 	position: relative;
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
+	color: var(--white-color);
 	outline: none;
-  border: 0;
-  background: none;
+  border: 3px solid var(--green-color);
+	border-radius: 10px;
+  background-color: var(--green-color);
 	transition: .3s ease;
 	cursor: pointer;
 	z-index: 1;
-  i {
-    font-size: 30px;
-    line-height: 1;
-    color: var(--font-color);
-		transition: .3s ease;
-    &:hover {
-      color: var(--global-color);
-    }
-  }
+	svg {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+	&:hover {
+		color: var(--green-color);
+		background-color: transparent;
+	}
+}
+
+.link-witharrow {
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.5;
+	text-transform: uppercase;
+	color: var(--green-color);
+	transition: .3s ease;
+	svg {
+		margin-left: 12px;
+	}
+	&:hover {
+		color: var(--red-color);
+	}
 }
 
 @include tablet {
