@@ -1737,3 +1737,104 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.15px;
   color: var(--font-color);
 }
+
+@media screen and (max-width: 1560px) {
+  .aboutbl {
+    padding-top: 48px;
+    padding-bottom: 24px;
+  }
+  .aboutbl__container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .aboutbl__col {
+    padding: 32px;
+  }
+  .aboutbl__details .aboutbl-detail:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .aboutbl__benefits {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 32px;
+  }
+  .aboutbl-detail__content {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .aboutbl {
+    padding-top: 0px;
+    padding-bottom: 0;
+  }
+  .aboutbl__col {
+    padding: 24px 20px;
+  }
+  .aboutbl__col .section-title {
+    margin-bottom: 24px;
+  }
+  .aboutbl__details {
+    flex-direction: row;
+  }
+  .aboutbl__details .aboutbl-detail:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  .aboutbl__benefits {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 32px;
+  }
+  .aboutbl-detail {
+    flex-direction: column;
+  }
+  .aboutbl-detail__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    margin-right: 0;
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+  .aboutbl-detail__content {
+    width: 100%;
+  }
+  .aboutbl-detail__content h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  .aboutbl-detail__content p {
+    font-size: 14px;
+  }
+  .aboutbl-detail__image {
+    display: none;
+  }
+  .benefit__icon {
+    width: 48px;
+    height: 48px;
+  }
+  .benefit__title {
+    font-size: 18px;
+  }
+  .benefit__text {
+    margin-top: 8px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .aboutbl .container {
+    padding: 0;
+  }
+  .aboutbl__details {
+    flex-direction: column;
+  }
+  .aboutbl__details .aboutbl-detail:not(:last-child) {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .aboutbl__benefits {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 32px;
+  }
+}
