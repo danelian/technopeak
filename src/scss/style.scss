@@ -59,6 +59,7 @@
 /***** COMPONENTS GLOBAL *****/
 @import "blocks/header";
 @import "blocks/footer";
+@import "blocks/form";
 // @import "blocks/breadcrumbs";
 // @import "blocks/pagination";
 // @import "blocks/tags";
@@ -66,10 +67,10 @@
 // @import "blocks/tabs";
 // @import "blocks/article";
 // @import "blocks/sliders";
-// @import "blocks/form";
 
 /***** SECTIONS GLOBAL (Widgets) *****/
 @import "widgets/hero";
 @import "widgets/newsbl";
 @import "widgets/aboutbl";
 @import "widgets/fclients";
+@import "widgets/contactusbl";
