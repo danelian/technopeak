@@ -49,6 +49,13 @@
   }
 }
 
+@media screen and (max-width: 359px) {
+  :root {
+    // base
+    --container-offset: 14px;
+  }
+}
+
 
 /***** BLOCKS GLOBAL *****/
 @import "general";

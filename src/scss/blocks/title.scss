@@ -47,6 +47,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 @media screen and (max-width: 1365px) {
+	.heading-row {
+		.page-title {
+			margin-right: 36px;
+		}
+		p {
+			margin-top: 12px;
+		}
+	}
 	.page-title {
 		margin-bottom: 24px;
 		font-size: 80px;
@@ -58,6 +66,18 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 @include tablet {
+	.heading-row {
+		flex-direction: column;
+		.page-title {
+			margin-right: 0;
+			margin-bottom: 12px;
+		}
+		p {
+			margin-top: 0;
+			font-size: 14px;
+			max-width: 600px;
+		}
+	}
 	.page-title {
 		margin-bottom: 24px;
 		font-size: 48px;
@@ -69,6 +89,13 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 @include mobile {
+	.heading-row {
+		margin-bottom: 36px;
+		p {
+			font-size: 12px;
+			max-width: 100%;
+		}
+	}
 	.page-title {
 		margin-bottom: 16px;
 		font-size: 32px;

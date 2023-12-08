@@ -11,11 +11,23 @@
   display: none;
 }
 
+.post-type-archive-news {
+  background-image: url('../img/desctop-page-decor.svg');
+  background-repeat: no-repeat;
+  background-size: 60% auto;
+  background-position: top right;
+}
+
 @include mobile {
   .frontpage-desktop-bg {
     display: none;
   }
   .frontpage-mobile-bg {
     display: block;
+  }
+  .post-type-archive-news {
+    background-image: url('../img/mobile-page-decor.svg');
+    background-position-y: 80px;
+    background-size: 100% auto;
   }
 }

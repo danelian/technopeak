@@ -8,3 +8,29 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 1365px) {
+  .news {
+    padding-top: 140px;
+  }
+}
+
+@include tablet {
+  .news {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    &__cards {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+}
+
+@include mobile {
+  .news {
+    padding-bottom: 32px;
+    &__cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
