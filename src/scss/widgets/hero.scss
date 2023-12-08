@@ -136,6 +136,7 @@
 
 @include mobile {
   .hero {
+    padding-bottom: 36px;
     &__container {
       p {
         font-size: 15px;

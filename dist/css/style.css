@@ -511,6 +511,16 @@ th {
     width: 18px;
     height: 18px;
   }
+  .button-icon-arrow {
+    width: 36px;
+    height: 36px;
+  }
+  .button-icon-arrow svg {
+    top: 7px;
+    right: 7px;
+    width: 12px;
+    height: 12px;
+  }
 }
 @media screen and (max-width: 576px) {
   .button {
@@ -526,6 +536,18 @@ th {
     right: 6px;
     width: 14px;
     height: 14px;
+  }
+  .button-icon-arrow {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+  }
+  .button-icon-arrow svg {
+    top: 5px;
+    right: 5px;
+  }
+  .link-witharrow {
+    font-size: 12px;
   }
 }
 /*-----title----*/
@@ -1428,6 +1450,9 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media screen and (max-width: 576px) {
+  .hero {
+    padding-bottom: 36px;
+  }
   .hero__container p {
     font-size: 15px;
   }
@@ -1527,4 +1552,62 @@ h1, h2, h3, h4, h5, h6 {
 }
 .ncard:hover .ncard__image {
   opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .newsbl {
+    padding-top: 48px;
+  }
+  .newsbl .heading {
+    margin-bottom: 32px;
+  }
+  .newsbl .heading .section-title {
+    margin-bottom: 0;
+  }
+  .newsbl .heading .button-icon-arrow {
+    margin-left: 16px;
+  }
+  .newsbl__cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .ncard {
+    padding: 20px 24px;
+    font-size: 16px;
+  }
+  .ncard__title {
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+  .ncard p:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .ncard__date {
+    margin-bottom: 12px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .newsbl {
+    padding-top: 36px;
+  }
+  .newsbl .heading {
+    margin-bottom: 20px;
+  }
+  .newsbl .heading .button-icon-arrow {
+    margin-left: 12px;
+  }
+  .newsbl__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .ncard {
+    padding: 16px;
+    font-size: 13px;
+    border-radius: 10px;
+  }
+  .ncard__title {
+    font-size: 16px;
+  }
+  .ncard__blur, .ncard__image {
+    border-radius: 10px;
+  }
 }

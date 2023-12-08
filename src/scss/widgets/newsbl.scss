@@ -90,3 +90,67 @@
     }
   }
 }
+
+@include tablet {
+  .newsbl {
+    padding-top: 48px;
+    .heading {
+      margin-bottom: 32px;
+      .section-title {
+        margin-bottom: 0;
+      }
+      .button-icon-arrow {
+        margin-left: 16px;
+      }
+    }
+    &__cards {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+  
+  .ncard {
+    padding: 20px 24px;
+    font-size: 16px;
+    &__title {
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+    p {
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+    &__date {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+@include mobile {
+  .newsbl {
+    padding-top: 36px;
+    .heading {
+      margin-bottom: 20px;
+      .button-icon-arrow {
+        margin-left: 12px;
+      }
+    }
+    &__cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  .ncard {
+    padding: 16px;
+    font-size: 13px;
+    border-radius: 10px;
+    &__title {
+      font-size: 16px;
+    }
+    &__blur,
+    &__image {
+      border-radius: 10px;
+    }
+  }
+}
