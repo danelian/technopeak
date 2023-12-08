@@ -66,45 +66,6 @@
 	}
 }
 
-.form-subs {
-	.form-group {
-		margin-bottom: 0;
-	}
-	.accept {
-		font-size: 10px;
-		color: #c8c8c8;
-	}
-	.link {
-		margin-top: 10px;
-		color: #989898;
-		&:before {
-			background-color: #989898;
-		}
-		&:hover {
-			color: var(--global-color);
-			&:before {
-				background-color: var(--global-color);
-			}
-		}
-	}
-}
-
-.form-login {
-	.form-group {
-		display: flex;
-		align-items: center;
-		flex-wrap: wrap;
-		.form-input {
-			width: calc(65% - 20px);
-		}
-		.forget-password {
-			width: calc(35% - 20px);
-			margin-left: 40px;
-		}
-	}
-}
-
-
 /* Checkbox */
 .checkbox {
 	display: block;
@@ -172,4 +133,37 @@ input[type="number"] {
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
 	display: none;
+}
+
+@include tablet {
+	.form {
+		&-group {
+			margin-bottom: 12px;
+		}
+		&-input {
+			padding: 14px 18px 14px 18px;
+			height: 48px;
+			font-size: 16px;
+			line-height: 20px;
+			border-radius: 12px;
+		}
+		textarea {
+			padding: 14px 18px 14px 18px;
+			height: 70px;
+			font-size: 16px;
+			line-height: 20px;
+			border-radius: 12px;
+		}
+		.accept {
+			font-size: 14px;
+		}
+	}
+}
+
+@include mobile {
+	.form {
+		.accept {
+			font-size: 12px;
+		}
+	}
 }
