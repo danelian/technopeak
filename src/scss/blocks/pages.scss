@@ -11,7 +11,8 @@
   display: none;
 }
 
-.post-type-archive-news {
+.post-type-archive-news,
+.single {
   background-image: url('../img/desctop-page-decor.svg');
   background-repeat: no-repeat;
   background-size: 60% auto;
@@ -25,7 +26,8 @@
   .frontpage-mobile-bg {
     display: block;
   }
-  .post-type-archive-news {
+  .post-type-archive-news,
+  .single {
     background-image: url('../img/mobile-page-decor.svg');
     background-position-y: 80px;
     background-size: 100% auto;
