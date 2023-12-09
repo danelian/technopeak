@@ -674,10 +674,9 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
-.post-type-archive-news,
+.archive,
 .single,
-.page-about-us,
-.post-type-archive-services {
+.page-about-us {
   background-image: url("../img/desctop-page-decor.svg");
   background-repeat: no-repeat;
   background-size: 60% auto;
@@ -692,10 +691,9 @@ h1, h2, h3, h4, h5, h6 {
   .frontpage-mobile-bg {
     display: block;
   }
-  .post-type-archive-news,
+  .archive,
 .single,
-.page-about-us,
-.post-type-archive-services {
+.page-about-us {
     background-image: url("../img/mobile-page-decor.svg");
     background-position-y: 80px;
     background-size: 100% auto;
@@ -3672,4 +3670,58 @@ input[type=number]::-webkit-inner-spin-button {
   .clients__list .col img {
     max-height: 80px;
   }
+}
+.industry {
+  padding-top: 200px;
+  padding-bottom: 60px;
+  margin-bottom: 48px;
+}
+.industry__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  width: 100%;
+}
+
+.icard {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 32px 24px 32px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.15px;
+  color: var(--font-color);
+  border-radius: 15px;
+  background-color: var(--white-color);
+  transition: 0.3s ease;
+}
+.icard__icon {
+  width: 110px;
+  margin-bottom: 24px;
+}
+.icard__title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+  color: #444444;
+  transition: 0.3s ease;
+}
+.icard p {
+  margin-top: 0;
+  margin-bottom: 0;
+  transition: 0.3s ease;
+}
+.icard p:not(:last-child) {
+  margin-bottom: 28px;
+}
+.icard .link-witharrow {
+  margin-top: auto;
+}
+.icard:hover .link-witharrow {
+  color: var(--red-color);
 }

@@ -1,0 +1,56 @@
+.industry {
+  padding-top: 200px;
+  padding-bottom: 60px;
+  margin-bottom: 48px;
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    width: 100%;
+  }
+}
+
+.icard {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 32px 24px 32px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.15px;
+  color: var(--font-color);
+  border-radius: 15px;
+  background-color: var(--white-color);
+  transition: .3s ease;
+  &__icon {
+    width: 110px;
+    margin-bottom: 24px;
+  }
+  &__title {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+    color: #444444;
+    transition: .3s ease;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: .3s ease;
+    &:not(:last-child) {
+      margin-bottom: 28px;
+    }
+  }
+  .link-witharrow {
+    margin-top: auto;
+  }
+  &:hover {
+    .link-witharrow {
+      color: var(--red-color);
+    }
+  }
+}
