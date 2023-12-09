@@ -13,11 +13,13 @@
 
 .post-type-archive-news,
 .single,
-.page-about-us {
+.page-about-us,
+.post-type-archive-services {
   background-image: url('../img/desctop-page-decor.svg');
   background-repeat: no-repeat;
   background-size: 60% auto;
   background-position: top right;
+  z-index: -1;
 }
 
 @include mobile {
@@ -29,7 +31,8 @@
   }
   .post-type-archive-news,
   .single,
-  .page-about-us {
+  .page-about-us,
+  .post-type-archive-services {
     background-image: url('../img/mobile-page-decor.svg');
     background-position-y: 80px;
     background-size: 100% auto;

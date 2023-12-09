@@ -23,6 +23,8 @@
 
 .ncard {
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding: 24px 32px;
   font-size: 16px;
   font-weight: 400;
@@ -76,6 +78,9 @@
     opacity: 0;
     transition: .3s ease;
     z-index: -2;
+  }
+  .link-witharrow {
+    margin-top: auto;
   }
   &:hover {
     color: var(--white-color);
