@@ -2691,6 +2691,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .aboutus-stats {
   display: flex;
+  margin-bottom: 100px;
 }
 .aboutus-stats__content {
   width: calc(66% - 10px);
@@ -2701,7 +2702,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .aboutus-stats__content .section-title {
   max-width: 750px;
-  margin-bottom: 60px;
+  margin-bottom: 56px;
 }
 .aboutus-stats__content .section-title span {
   color: var(--red-color);
@@ -2711,7 +2712,7 @@ input[type=number]::-webkit-inner-spin-button {
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 56px;
 }
 .aboutus-stats__content .row .line-content {
   padding-top: 28px;
@@ -2732,6 +2733,73 @@ input[type=number]::-webkit-inner-spin-button {
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
+}
+.aboutus-indi {
+  margin-bottom: 120px;
+}
+.aboutus-indi .section-title {
+  margin-bottom: 48px;
+}
+.aboutus-indi__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+.aboutus-indi__left {
+  width: calc(38% - 16px);
+  margin-right: 24px;
+  padding: 40px 32px 24px 36px;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+}
+.aboutus-indi__left h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+  color: #444444;
+}
+.aboutus-indi__left p {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.aboutus-indi__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: calc(24% - 16px);
+}
+.aboutus-indi__center h6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 100px;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+  color: #444444;
+}
+.aboutus-indi__right {
+  width: calc(38% - 16px);
+  margin-left: 24px;
+}
+.aboutus-indi__right .point:not(:last-child) {
+  margin-bottom: 20px;
+}
+.aboutus-indi__right .point:nth-child(1) .point__icon::before, .aboutus-indi__right .point:nth-child(1) .point__icon::after {
+  background-color: var(--red-color);
+}
+.aboutus-indi__right .point:nth-child(2) .point__icon::before, .aboutus-indi__right .point:nth-child(2) .point__icon::after {
+  background-color: #444444;
+}
+.aboutus-indi__right .point:nth-child(3) .point__icon::before, .aboutus-indi__right .point:nth-child(3) .point__icon::after {
+  background-color: var(--green-color);
 }
 
 .digit {
