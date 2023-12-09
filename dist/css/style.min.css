@@ -456,6 +456,35 @@ th {
   cursor: auto;
 }
 
+.button-rounded {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 32px;
+  min-width: 180px;
+  min-height: 64px;
+  font-size: 19px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--green-color);
+  border: 3px solid var(--green-color);
+  outline: none;
+  border-radius: 15px;
+  background-color: transparent;
+  transition: 0.3s ease;
+}
+.button-rounded:hover {
+  color: var(--white-color);
+  background-color: var(--green-color);
+}
+.button-rounded.disabled {
+  opacity: 0.4;
+  cursor: auto;
+}
+
 .button-icon-arrow {
   display: inline-flex;
   align-items: center;
@@ -502,7 +531,8 @@ th {
 }
 
 @media screen and (max-width: 1024px) {
-  .button {
+  .button,
+.button-rounded {
     padding: 10px 32px;
     min-width: 150px;
     min-height: 52px;
@@ -510,7 +540,8 @@ th {
     line-height: 20px;
     border-radius: 10px;
   }
-  .button svg {
+  .button svg,
+.button-rounded svg {
     top: 8px;
     right: 8px;
     width: 18px;
@@ -528,7 +559,8 @@ th {
   }
 }
 @media screen and (max-width: 576px) {
-  .button {
+  .button,
+.button-rounded {
     padding: 10px 32px;
     min-width: 120px;
     min-height: 44px;
@@ -536,7 +568,8 @@ th {
     line-height: 16px;
     border-radius: 10px;
   }
-  .button svg {
+  .button svg,
+.button-rounded svg {
     top: 6px;
     right: 6px;
     width: 14px;
@@ -4133,5 +4166,43 @@ input[type=number]::-webkit-inner-spin-button {
   }
   .contacts-item p {
     font-size: 14px;
+  }
+}
+.error-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 104px;
+  height: calc(100vh - 120px);
+}
+.error-block__subtitle {
+  margin-bottom: 24px;
+  display: block;
+  font-size: 260px;
+  line-height: 0.9;
+  color: var(--red-color);
+}
+
+@media screen and (max-width: 1365px) {
+  .error-block {
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+  }
+  .error-block__subtitle {
+    margin-bottom: 16px;
+    font-size: 180px;
+  }
+  .error-block .section-title {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .error-block__subtitle {
+    font-size: 120px;
+  }
+  .error-block .section-title {
+    margin-bottom: 24px;
   }
 }

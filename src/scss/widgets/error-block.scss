@@ -1,0 +1,41 @@
+.error-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 104px;
+  height: calc(100vh - 120px);
+  &__subtitle {
+    margin-bottom: 24px;
+    display: block;
+    font-size: 260px;
+    line-height: 0.9;
+    color: var(--red-color);
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .error-block {
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+    &__subtitle {
+      margin-bottom: 16px;
+      font-size: 180px;
+    }
+    .section-title {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@include tablet {
+  .error-block {
+    &__subtitle {
+      font-size: 120px;
+    }
+    .section-title {
+      margin-bottom: 24px;
+    }
+  }
+}
