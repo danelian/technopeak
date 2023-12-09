@@ -1,5 +1,6 @@
 .aboutus {
   padding-top: 220px;
+  padding-bottom: 100px;
   &-stats {
     display: flex;
     margin-bottom: 100px;
@@ -75,6 +76,10 @@
         margin-top: 0;
         margin-bottom: 16px;
       }
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
     }
     &__center {
       display: flex;
@@ -119,6 +124,21 @@
       }
     }
   }
+  &-benefits {
+    width: 100%;
+    padding: 40px 32px 24px 36px;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    .section-title {
+      margin-bottom: 48px;
+    }
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 48px 60px;
+      width: 100%;
+    }
+  }
 }
 
 .digit { 
@@ -146,5 +166,188 @@
     font-weight: 800;
     line-height: 1.1;
     color: var(--green-color);
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .aboutus {
+    padding-top: 140px;
+    padding-bottom: 80px;
+    &-stats,
+    &-indi {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+@include tablet {
+  .aboutus {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    &-stats {
+      margin-bottom: 60px;
+      flex-direction: column;
+      &__content {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 24px;
+        padding: 32px 28px;
+        .section-title {
+          margin-bottom: 36px;
+        }
+        .row {
+          margin-bottom: 36px;
+          .line-content {
+            padding-top: 20px;
+            width: calc(50% - 12px);
+            &:nth-child(1) {
+              margin-right: 24px;
+            }
+          }
+        }
+      }
+      &__image {
+        width: 100%;
+        height: 500px;
+      }
+    }
+    &-indi {
+      margin-bottom: 60px;
+      .section-title {
+        margin-bottom: 24px;
+      }
+      &__container {
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      &__left {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 28px;
+        padding: 32px 28px;
+        h3 {
+          font-size: 20px;
+        }
+      }
+      &__center {
+        width: 180px;
+        h6 {
+          font-size: 44px;
+        }
+      }
+      &__right {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 28px;
+        .point {
+          &:not(:last-child) {
+            margin-bottom: 28px;
+          }
+        }
+      }
+    }
+    &-benefits {
+      padding: 32px 28px;
+      .section-title {
+        margin-bottom: 36px;
+      }
+      &__list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 32px;
+      }
+    }
+  }
+  
+  .digit { 
+    &s {
+      row-gap: 24px;
+      .digit {
+        max-width: 180px;
+        &:not(:last-child) {
+          margin-right: 32px;
+        }
+      }
+    }
+    font-size: 14px;
+    span {
+      font-size: 32px;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .aboutus-stats,
+  .aboutus-benefits {
+    margin-left: -20px;
+    width: calc(100% + 40px);
+  }
+}
+
+@include mobile {
+  .aboutus {
+    padding-bottom: 20px;
+    &-stats {
+      &__content {
+        padding: 24px 20px;
+        .section-title {
+          font-size: 24px;
+        }
+        .row {
+          margin-bottom: 36px;
+          flex-direction: column;
+          .line-content {
+            width: 100%;
+            &:nth-child(1) {
+              margin-right: 0;
+              margin-bottom: 32px;
+            }
+          }
+        }
+      }
+      &__image {
+        height: 370px;
+      }
+    }
+    &-indi {
+      margin-bottom: 48px;
+      .section-title {
+        margin-bottom: 20px;
+      }
+      &__left {
+        padding: 20px;
+        h3 {
+          font-size: 18px;
+          margin-bottom: 8px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+    &-benefits {
+      padding: 24px 20px;
+      &__list {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 32px;
+      }
+    }
+  }
+  
+  .digit { 
+    &s {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+      .digit {
+        max-width: 100%;
+        &:not(:last-child) {
+          margin-right: 0;
+        }
+      }
+    }
+    font-size: 12px;
+    span {
+      font-size: 32px;
+    }
   }
 }

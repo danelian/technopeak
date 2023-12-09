@@ -2688,6 +2688,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .aboutus {
   padding-top: 220px;
+  padding-bottom: 100px;
 }
 .aboutus-stats {
   display: flex;
@@ -2766,6 +2767,10 @@ input[type=number]::-webkit-inner-spin-button {
   margin-top: 0;
   margin-bottom: 16px;
 }
+.aboutus-indi__left img {
+  width: 100%;
+  max-width: 100%;
+}
 .aboutus-indi__center {
   display: flex;
   align-items: center;
@@ -2801,6 +2806,21 @@ input[type=number]::-webkit-inner-spin-button {
 .aboutus-indi__right .point:nth-child(3) .point__icon::before, .aboutus-indi__right .point:nth-child(3) .point__icon::after {
   background-color: var(--green-color);
 }
+.aboutus-benefits {
+  width: 100%;
+  padding: 40px 32px 24px 36px;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+}
+.aboutus-benefits .section-title {
+  margin-bottom: 48px;
+}
+.aboutus-benefits__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px 60px;
+  width: 100%;
+}
 
 .digit {
   margin: 0;
@@ -2828,4 +2848,177 @@ input[type=number]::-webkit-inner-spin-button {
   font-weight: 800;
   line-height: 1.1;
   color: var(--green-color);
+}
+
+@media screen and (max-width: 1365px) {
+  .aboutus {
+    padding-top: 140px;
+    padding-bottom: 80px;
+  }
+  .aboutus-stats, .aboutus-indi {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .aboutus {
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+  .aboutus-stats {
+    margin-bottom: 60px;
+    flex-direction: column;
+  }
+  .aboutus-stats__content {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+    padding: 32px 28px;
+  }
+  .aboutus-stats__content .section-title {
+    margin-bottom: 36px;
+  }
+  .aboutus-stats__content .row {
+    margin-bottom: 36px;
+  }
+  .aboutus-stats__content .row .line-content {
+    padding-top: 20px;
+    width: calc(50% - 12px);
+  }
+  .aboutus-stats__content .row .line-content:nth-child(1) {
+    margin-right: 24px;
+  }
+  .aboutus-stats__image {
+    width: 100%;
+    height: 500px;
+  }
+  .aboutus-indi {
+    margin-bottom: 60px;
+  }
+  .aboutus-indi .section-title {
+    margin-bottom: 24px;
+  }
+  .aboutus-indi__container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .aboutus-indi__left {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 28px;
+    padding: 32px 28px;
+  }
+  .aboutus-indi__left h3 {
+    font-size: 20px;
+  }
+  .aboutus-indi__center {
+    width: 180px;
+  }
+  .aboutus-indi__center h6 {
+    font-size: 44px;
+  }
+  .aboutus-indi__right {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 28px;
+  }
+  .aboutus-indi__right .point:not(:last-child) {
+    margin-bottom: 28px;
+  }
+  .aboutus-benefits {
+    padding: 32px 28px;
+  }
+  .aboutus-benefits .section-title {
+    margin-bottom: 36px;
+  }
+  .aboutus-benefits__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 32px;
+  }
+  .digit {
+    font-size: 14px;
+  }
+  .digits {
+    row-gap: 24px;
+  }
+  .digits .digit {
+    max-width: 180px;
+  }
+  .digits .digit:not(:last-child) {
+    margin-right: 32px;
+  }
+  .digit span {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .aboutus-stats,
+.aboutus-benefits {
+    margin-left: -20px;
+    width: calc(100% + 40px);
+  }
+}
+@media screen and (max-width: 576px) {
+  .aboutus {
+    padding-bottom: 20px;
+  }
+  .aboutus-stats__content {
+    padding: 24px 20px;
+  }
+  .aboutus-stats__content .section-title {
+    font-size: 24px;
+  }
+  .aboutus-stats__content .row {
+    margin-bottom: 36px;
+    flex-direction: column;
+  }
+  .aboutus-stats__content .row .line-content {
+    width: 100%;
+  }
+  .aboutus-stats__content .row .line-content:nth-child(1) {
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+  .aboutus-stats__image {
+    height: 370px;
+  }
+  .aboutus-indi {
+    margin-bottom: 48px;
+  }
+  .aboutus-indi .section-title {
+    margin-bottom: 20px;
+  }
+  .aboutus-indi__left {
+    padding: 20px;
+  }
+  .aboutus-indi__left h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .aboutus-indi__left p {
+    font-size: 14px;
+  }
+  .aboutus-benefits {
+    padding: 24px 20px;
+  }
+  .aboutus-benefits__list {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 32px;
+  }
+  .digit {
+    font-size: 12px;
+  }
+  .digits {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+  .digits .digit {
+    max-width: 100%;
+  }
+  .digits .digit:not(:last-child) {
+    margin-right: 0;
+  }
+  .digit span {
+    font-size: 32px;
+  }
 }
