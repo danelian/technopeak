@@ -90,3 +90,89 @@
     }
   }
 }
+
+@media screen and (max-width: 1365px) {
+  .services {
+    padding-top: 140px;
+    &__cards {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  }
+}
+
+@include tablet {
+  .services {
+    padding-top: 120px;
+    padding-bottom: 40px;
+    .heading-row {
+      margin-bottom: 24px;
+    }
+    .line-decor {
+      margin-bottom: 40px;
+    }
+    &__group {
+      .heading {
+        margin-bottom: 32px;
+      }
+    }
+  }
+  
+  .scard {
+    padding: 20px 24px;
+    &__image {
+      position: relative;
+      right: auto;
+      bottom: auto;
+      width: 100%;
+      margin-bottom: 4px;
+      order: -1;
+    }
+    &__title {
+      margin-bottom: 12px;
+      max-width: 100%;
+      font-size: 20px;
+    }
+    ul {
+      max-width: 100%;
+      margin-bottom: 16px;
+      padding-left: 20px;
+      font-size: 14px;
+      li {
+        &:not(:last-child) {
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .services {
+    &__cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .heading-row {
+      margin-bottom: 16px;
+    }
+    &__group {
+      .heading {
+        margin-bottom: 24px;
+        .section-title {
+          font-size: 24px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  
+  .scard {
+    padding: 18px 18px;
+    &__title {
+      margin-bottom: 8px;
+      font-size: 16px;
+    }
+  }
+}
