@@ -675,7 +675,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-type-archive-news,
-.single {
+.single,
+.page-about-us {
   background-image: url("../img/desctop-page-decor.svg");
   background-repeat: no-repeat;
   background-size: 60% auto;
@@ -690,7 +691,8 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
   }
   .post-type-archive-news,
-.single {
+.single,
+.page-about-us {
     background-image: url("../img/mobile-page-decor.svg");
     background-position-y: 80px;
     background-size: 100% auto;
@@ -2683,4 +2685,79 @@ input[type=number]::-webkit-inner-spin-button {
   .seemore .section-title {
     margin-bottom: 16px;
   }
+}
+.aboutus {
+  padding-top: 220px;
+}
+.aboutus-stats {
+  display: flex;
+}
+.aboutus-stats__content {
+  width: calc(66% - 10px);
+  margin-right: 20px;
+  padding: 40px 32px 32px 36px;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+}
+.aboutus-stats__content .section-title {
+  max-width: 750px;
+  margin-bottom: 60px;
+}
+.aboutus-stats__content .section-title span {
+  color: var(--red-color);
+}
+.aboutus-stats__content .row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.aboutus-stats__content .row .line-content {
+  padding-top: 28px;
+  width: calc(50% - 30px);
+  border-top: 1px solid var(--red-color);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--font-color);
+}
+.aboutus-stats__content .row .line-content:nth-child(1) {
+  margin-right: 60px;
+}
+.aboutus-stats__image {
+  display: block;
+  width: calc(34% - 10px);
+  border-radius: 15px;
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.digit {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--font-color);
+}
+.digits {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.digits .digit {
+  max-width: 260px;
+}
+.digits .digit:not(:last-child) {
+  margin-right: 48px;
+}
+.digit span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--green-color);
 }
