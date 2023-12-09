@@ -3725,3 +3725,45 @@ input[type=number]::-webkit-inner-spin-button {
 .icard:hover .link-witharrow {
   color: var(--red-color);
 }
+
+@media screen and (max-width: 1365px) {
+  .industry {
+    padding-top: 140px;
+  }
+  .industry__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .industry {
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+  .industry__cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .icard {
+    padding: 20px;
+    font-size: 15px;
+  }
+  .icard__icon {
+    width: 70px;
+    margin-bottom: 16px;
+  }
+  .icard__title {
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+  .icard p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .industry {
+    padding-bottom: 32px;
+  }
+  .industry__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
