@@ -51,12 +51,90 @@
     }
     &__content {
       width: calc(50% - 50px);
+      p {
+        margin-top: 0;
+        margin-bottom: 16px;
+      }
     }
     &__features {
       width: calc(50% - 30px);
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 72px 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .si {
+    &-section {
+      padding-top: 140px;
+      margin-bottom: 60px;
+    }
+    &-head {
+      padding: 32px 28px;
+    }
+    &-about {
+      padding: 32px 28px;
+    }
+  }
+  .services__group:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+@include tablet {
+  .si {
+    &-section {
+      padding-top: 120px;
+      margin-bottom: 48px;
+    }
+    &-head {
+      height: 370px;
+    }
+    &-about {
+      &__container {
+        justify-content: flex-start;
+        flex-direction: column;
+      }
+      &__content {
+        width: 100%;
+        margin-bottom: 32px;
+      }
+      &__features {
+        width: 100%;
+        gap: 48px 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .si-section .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@include mobile {
+  .si {
+    &-head {
+      padding: 20px;
+      .section-title {
+        font-size: 32px;
+      }
+    }
+    &-about {
+      padding: 20px;
+      &__features {
+        row-gap: 32px;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+    &__content {
+      .title {
+        font-size: 24px;
+      }
     }
   }
 }
